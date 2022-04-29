@@ -1,24 +1,12 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# bookers2 debug
+dmm webcamp 研修カリキュラム 応用課題2
+## debugした項目
+### 1. routes.rbファイル end忘れ
+routes.rb の最後に`end`を追記
+<br><br>
+### 2. ホストの許可
+config/environments/development.rbにホストの許可を追記
+<br><br>
+### 3. users_controllerのend忘れ
+users_controller.rbのindexアクションのend忘れ.`end`を追記
+<br><b
