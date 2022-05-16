@@ -19,4 +19,8 @@ usersコントローラでログイン制限がかかっているので<br>
 `/users/(idが)sign_in` => `users#show` => ログインしていないので `/users/sign_in`にリダイレクト => `users#show` => ...<br>
 という無限ループになる。<br>
 devise_forを上に記述することで<br>
-`GET '/users/sign_in'`=> `devise/sessions#new`になる。
+`GET '/users/sign_in'`=> `devise/sessions#new`になる
+<br><br>
+### 5. `Webpacker::Manifest::MissingEntryError in Devise::Sessions#new`というエラー
+`bundle exec rails webpacker:install`で解決
+<br><br>
