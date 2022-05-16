@@ -24,3 +24,7 @@ devise_forを上に記述することで<br>
 ### 5. `Webpacker::Manifest::MissingEntryError in Devise::Sessions#new`というエラー
 `bundle exec rails webpacker:install`で解決
 <br><br>
+### 6. ヘッダー以外のレイアウトが表示されない(yield忘れ)
+view/layouts/application.rb の `main`タグの中に `<%= yield %>`を追加する。<br>
+`<%= yield %>` は、各ページの内容のhtmlファイルの内容を持ってくるメソッド
+<br><br>
